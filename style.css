@@ -549,6 +549,7 @@ body {
 
     .info-content.expanded {
         padding: 0 1.5rem 1.5rem;
+        max-height: 2000px;
     }
 }
 
