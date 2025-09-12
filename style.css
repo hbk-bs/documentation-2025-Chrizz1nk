@@ -664,3 +664,59 @@ body {
     max-height: 2000px; /* Erhöht von 1000px */
     padding: 0 2rem 2rem;
 }
+
+/* Füge diese CSS-Regeln zu deiner style.css hinzu: */
+
+/* Work Card Bilder richtig anpassen */
+.work-image {
+    height: 200px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.work-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Bild wird proportional skaliert und füllt den Container */
+    object-position: center; /* Bild wird zentriert */
+    transition: transform 0.3s ease;
+}
+
+/* Hover-Effekt für die Bilder */
+.work-card:hover .work-image img {
+    transform: scale(1.05); /* Leichter Zoom-Effekt beim Hover */
+}
+
+/* Falls du möchtest, dass die Bilder den Container komplett ausfüllen ohne Beschneidung: */
+.work-image img.contain {
+    object-fit: contain; /* Ganzes Bild sichtbar, eventuell mit Leerraum */
+}
+
+/* Fallback für den Fall, dass Bilder nicht laden */
+.work-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    z-index: -1;
+}
+
+/* Responsive Anpassungen für mobile Geräte */
+@media (max-width: 768px) {
+    .work-image {
+        height: 180px; /* Etwas kleiner auf mobilen Geräten */
+    }
+}
+
+@media (max-width: 480px) {
+    .work-image {
+        height: 160px; /* Noch kleiner auf sehr kleinen Bildschirmen */
+    }
+}
