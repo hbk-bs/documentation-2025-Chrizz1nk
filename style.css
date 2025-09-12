@@ -566,3 +566,101 @@ body {
         padding: 0 15px;
     }
 }
+/* Zusätzliches CSS für die Projekt Info-Sections - Zum bestehenden CSS hinzufügen */
+
+/* Project Info Sections */
+.project-info-section {
+    margin-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+}
+
+.project-info-card {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.project-info-card .info-header {
+    padding: 1rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.project-info-card .info-header:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.project-info-card .info-title {
+    font-size: 1rem;
+    color: #e0e0e0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-info-card .expand-icon {
+    font-size: 1.2rem;
+    color: #667eea;
+    transition: transform 0.3s ease;
+}
+
+.project-info-card.expanded .expand-icon {
+    transform: rotate(180deg);
+}
+
+.project-info-card .info-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    background: rgba(255, 255, 255, 0.01);
+}
+
+.project-info-card .info-content.expanded {
+    max-height: 1500px;
+    padding: 0 1rem 1rem;
+}
+
+.project-info-card .info-text {
+    color: #c0c0c0;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.project-info-card .info-text p {
+    margin-bottom: 1rem;
+}
+
+.project-info-card .info-text p:last-child {
+    margin-bottom: 0;
+}
+
+.project-info-card .info-text strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Mobile Anpassungen für Project Info */
+@media (max-width: 768px) {
+    .project-info-card .info-header {
+        padding: 0.75rem;
+    }
+
+    .project-info-card .info-title {
+        font-size: 0.9rem;
+    }
+
+    .project-info-card .info-content.expanded {
+        padding: 0 0.75rem 0.75rem;
+    }
+}
+
+/* Hauptinfo-Section max-height anpassen */
+.info-content.expanded {
+    max-height: 2000px; /* Erhöht von 1000px */
+    padding: 0 2rem 2rem;
+}
