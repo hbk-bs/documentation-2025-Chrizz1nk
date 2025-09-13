@@ -15,6 +15,9 @@ in Braunschweig.
 
 ## Projekte die hier vorgestellt werden
 
-- Erster Punkt
-- Zweiter Punkt
-- Dritter Punkt
+- Teachbale Maschine
+- Nature of Code
+- Graphic Novel
+- Arbeit mit LargeLanguageModel und API
+- Debate Club
+- Altes Archive des ersten Semesters SoSe24/25
