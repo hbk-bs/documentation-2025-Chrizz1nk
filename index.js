@@ -104,54 +104,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Such-Funktionalität
-    function searchWorks(query) {
-        const searchTerm = query.toLowerCase();
-        
-        workCards.forEach(card => {
-            const title = card.querySelector('.work-title').textContent.toLowerCase();
-            const description = card.querySelector('.work-description').textContent.toLowerCase();
-            
-            if (title.includes(searchTerm) || description.includes(searchTerm)) {
-                card.classList.remove('hidden');
-                card.style.opacity = '1';
-                card.style.transform = 'translateY(0)';
-            } else {
-                card.classList.add('hidden');
-                card.style.opacity = '0';
-                card.style.transform = 'translateY(20px)';
-            }
-        });
-    }
+    
 
-    // Suche Event Listener
-    if (searchInput) {
-        searchInput.addEventListener('input', (e) => {
-            const query = e.target.value;
-            if (query.length > 0) {
-                searchWorks(query);
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-            } else {
-                workCards.forEach(card => {
-                    card.classList.remove('hidden');
-                    card.style.opacity = '1';
-                    card.style.transform = 'translateY(0)';
-                });
-                const allFilter = document.querySelector('[data-filter="all"]');
-                if (allFilter) allFilter.classList.add('active');
-            }
-        });
-
-        // Enter-Taste für Suche
-        searchInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                const query = searchInput.value;
-                if (query.length > 0) {
-                    searchWorks(query);
-                }
-            }
-        });
-    }
+    
 
     if (searchBtn) {
         searchBtn.addEventListener('click', () => {
