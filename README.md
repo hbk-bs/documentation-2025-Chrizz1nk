@@ -4,60 +4,17 @@
 
 
 
-# Hauptüberschrift
+# My Archive
 
-## Unterüberschrift
+## Sommersemester 2025
+Grundlagen der digitalen Gestaltung II
 
-### Kleinere Überschrift
+Dieses digitale Portfolio von Christopher Link, dient der Dokumentation der Arbeiten des
+zweiten Grundlagen Semesters der digitalen Kommunikation II an der Hochschule für Bildende Künste 
+in Braunschweig.
 
-Dies ist ein normaler Textabsatz. Du kannst hier **fetten Text** oder *kursiven Text* verwenden.
-
-## Liste mit Punkten
+## Projekte die hier vorgestellt werden
 
 - Erster Punkt
 - Zweiter Punkt
 - Dritter Punkt
-
-## Nummerierte Liste
-
-1. Erste Aufgabe
-2. Zweite Aufgabe
-3. Dritte Aufgabe
-
-## Link und Bild
-
-[Das ist ein Link zu Google](https://www.google.com)
-
-![Alternativtext für Bild](bildurl.jpg)
-
-## Code
-
-Für `inline Code` verwendest du Backticks.
-
-Für größere Codeblöcke:
-
-```
-Das ist ein Codeblock
-mit mehreren Zeilen
-```
-
-## Zitat
-
-> Das ist ein Zitat oder eine wichtige Bemerkung.
-> Es kann auch mehrzeilig sein.
-
-## Tabelle
-
-| Spalte 1 | Spalte 2 | Spalte 3 |
-|----------|----------|----------|
-| Wert A   | Wert B   | Wert C   |
-| Wert D   | Wert E   | Wert F   |
-
----
-
-Das ist eine horizontale Linie (oben).
-
-**Wichtige Notizen:**
-- Verwende `#` für Überschriften (mehr # = kleinere Überschrift)
-- Lasse immer eine Leerzeile zwischen verschiedenen Elementen
-- Für Listen beginne mit `-` oder `*` für Punkte, oder `1.` für Nummern
